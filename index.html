@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>肖虎威的Github主页</title>
+    <script src="https://text.xiaohuwei.cn/ld/jquery3.min.js"></script>
+    <style>
+        body{
+            background:url(https://vip.xiaohuwei.cn/images.php);
+            
+        }
+    li{
+        list-style: none;
+        margin-top: 5%;
+        background-color: rgba(255, 255, 255, 0.178);
+        width: 500px;
+        text-align: center;
+        color: aliceblue;
+        border-radius: 20px;
+        font-size: 30px;
+        transition: 0.3s;
+        cursor: pointer;
+        height: 50px;
+        line-height: 50px;
+        font-family: "方正行楷简体";
+        text-shadow: 0 0 10px yellow;
+    }
+    li:hover{
+        transform: scale(1.2);
+        filter: blur(0px);
+    }
+    h1{
+        text-align: center;
+        color: aliceblue;
+        margin-top: 10%;
+        text-shadow: 0 0 10px yellow;
+    }
+    .box{
+        text-align: center;
+        width: 600px;
+
+        margin: 0 auto;
+    }
+    </style>
+</head>
+<body>
+    <h1>欢迎来到我的GitHub</h1>
+    <div class="box">
+    <ul>
+        <li>云想衣裳花想容</li>
+        <li>春风拂槛露华浓</li>
+        <li>若非群玉山头见</li>
+        <li>会向瑶台月下逢</li>
+        <li>李白</li>
+    </ul>
+</div>
+</body>
+<script>
+$('li').hover(function(){
+for(var i=0;i<$('li').length;i++){
+    
+    $(this).eq(i).css("filter","blur(0px)").siblings().css("filter","blur(10px)");
+    
+}
+},function(){
+    $('body').css("fitler","blur(0px)");
+$('li').css("filter","blur(0px)");
+
+})
+</script>
+</html>
